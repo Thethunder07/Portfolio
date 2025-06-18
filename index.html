@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+
+    <!-- Styles & Icons -->
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+</head>
+<body>
+    <!-- ────────────── Header ────────────── -->
+    <header class="header">
+        <a href="#" class="logo">Portfolio.</a>
+
+        <!-- Burger (shown on mobile) -->
+        <div class="menu-toggle">
+            <i class="bx bx-menu" id="menuIcon"></i>
+        </div>
+
+        <!-- Main navigation -->
+        <nav class="navbar">
+            <a href="#home"     style="--i:12;" class="active">Home</a>
+            <a href="#about"    style="--i:13;">About</a>
+            <a href="#skills"   style="--i:14;">Skills</a>
+            <a href="#projects" style="--i:15;">Projects</a>
+            <a href="#contact"  style="--i:16;">Contact</a>
+        </nav>
+
+        <!-- Dark‑mode toggle -->
+        <div class="toggle">
+            <i class="bx bx-moon" id="themeIcon"></i>
+        </div>
+    </header>
+
+    <!-- ────────────── Home / Hero ────────────── -->
+    <section id="home" class="home animate">
+        <div class="home-content">
+            <h3>Hello, I am</h3>
+            <h1>Aa. Kashyap</h1>
+            <p>
+                I’m a student pursuing a Bachelor of Science<br />
+                and a fresher in full‑stack development.
+            </p>
+
+            <div class="social-media">
+                <a href="https://m.facebook.com/aakarsh.kashyap.75/"      style="--i:7;" target="_blank" rel="noopener"><i class="bx bxl-facebook-circle"></i></a>
+                <a href="https://x.com/DarkThunde74591"                   style="--i:8;" target="_blank" rel="noopener"><i class="bx bxl-twitter"></i></a>
+                <a href="https://www.instagram.com/dark_thethunder"       style="--i:9;" target="_blank" rel="noopener"><i class="bx bxl-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/aakarsh-kashyap-b743162a6/" style="--i:10;" target="_blank" rel="noopener"><i class="bx bxl-linkedin-square"></i></a>
+            </div>
+
+            <a href="#" id="downloadCV" class="btn">Download CV</a>
+        </div>
+
+        <!-- Rotating profession ring -->
+        <div class="profession-container">
+            <div class="profession-box">
+                <div class="profession" style="--i:0;"><i class="bx bx-code-alt"></i><h3>Web Developer</h3></div>
+                <div class="profession" style="--i:1;"><i class="bx bx-camera"></i><h3>Photographer</h3></div>
+                <div class="profession" style="--i:2;"><i class="bx bx-palette"></i><h3>Web Designer</h3></div>
+                <div class="profession" style="--i:3;"><i class="bx bx-video-recording"></i><h3>Videographer</h3></div>
+                <div class="circle-home"></div>
+            </div>
+            <div class="overlay"></div>
+        </div>
+
+        <div class="home-img">
+            <img src="img/main.png" alt="Hero image" />
+        </div>
+    </section>
+
+    <!-- ────────────── About ────────────── -->
+    <section id="about" class="about animate">
+        <div class="about-image">
+            <img src="img/about.png" alt="About me" />
+        </div>
+        <div class="about-text">
+            <h3>About Me</h3>
+            <h1>A Journey of Passion and Dedication</h1>
+            <p>
+                Hello! I’m Aakarsh Kashyap, a technology enthusiast pursuing a B.Sc. in Computer Science and Engineering.
+                I love web development, UI/UX design and solving real‑world problems. Outside coding, you’ll find me
+                exploring AI, reading books and contributing to open‑source projects.
+            </p>
+        </div>
+    </section>
+
+    <!-- ────────────── Skills ────────────── -->
+    <section id="skills" class="skills-section animate">
+        <h2 class="section-title">My Skills</h2>
+
+        <div class="skills-container">
+            <!-- Technical -->
+            <div class="technical-skills">
+                <h3 class="technical-heading">Technical Skills</h3>
+                <div class="skill"><p>Java</p>        <div class="progress-bar"><span style="width: 80%;"></span></div><p class="percentage">80%</p></div>
+                <div class="skill"><p>MongoDB</p>      <div class="progress-bar"><span style="width: 70%;"></span></div><p class="percentage">70%</p></div>
+                <div class="skill"><p>JavaScript</p>    <div class="progress-bar"><span style="width: 60%;"></span></div><p class="percentage">60%</p></div>
+                <div class="skill"><p>Node.js</p>       <div class="progress-bar"><span style="width: 50%;"></span></div><p class="percentage">50%</p></div>
+                <div class="skill"><p>SQL</p>           <div class="progress-bar"><span style="width: 60%;"></span></div><p class="percentage">60%</p></div>
+                <div class="skill"><p>DSA</p>           <div class="progress-bar"><span style="width: 60%;"></span></div><p class="percentage">60%</p></div>
+                <div class="skill"><p>React</p>         <div class="progress-bar"><span style="width: 40%;"></span></div><p class="percentage">40%</p></div>
+            </div>
+
+            <!-- Professional -->
+            <div class="professional-skills">
+                <h2 class="skills-heading">Professional Skills</h2>
+                <div class="circle-skill"><div class="circle" data-percent="90"></div><p>Team Work</p></div>
+                <div class="circle-skill"><div class="circle" data-percent="70"></div><p>Project Management</p></div>
+                <div class="circle-skill"><div class="circle" data-percent="75"></div><p>Problem-Solving</p></div>
+                <div class="circle-skill"><div class="circle" data-percent="60"></div><p>Creativity</p></div>
+                <div class="circle-skill"><div class="circle" data-percent="60"></div><p>Communication</p></div>
+                <div class="circle-skill"><div class="circle" data-percent="65"></div><p>Leadership</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ────────────── Projects ────────────── -->
+    <section id="projects" class="projects-section animate">
+        <h2>My Projects</h2>
+        <div class="projects-wrapper">
+            <button class="slide-btn left-btn">&#10094;</button>
+
+            <div class="projects-container">
+                <!-- Repeat project‑card blocks as needed -->
+                <div class="project-card">
+                    <img src="img/port.jpg" alt="Portfolio Site" class="project-img" />
+                    <div class="project-info">
+                        <h3>Portfolio Website</h3>
+                        <p>A personal portfolio website to showcase my skills and projects.</p>
+                        <a href="https://portfolio-nine-jade-69.vercel.app/" class="project-btn" target="_blank">View Project</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="img/weather.jpg" alt="Project 2" class="project-img">
+                    <div class="project-info">
+                        <h3>Weather App</h3>
+                        <p>An app that provides real-time weather updates for any city.</p>
+                        <a href="https://project-3-nine-kappa.vercel.app/" class="project-btn">View Project</a>
+                    </div>
+                </div>
+    
+                <div class="project-card">
+                    <img src="img/ecomer.jpg" alt="Project 3" class="project-img">
+                    <div class="project-info">
+                        <h3>PrepBot</h3>
+                        <p>With AI, achieve success in interviews ! .</p>
+                        <a href="https://inter-view-prep-nb49-p8litt5r4-thunders-projects-0e7933fb.vercel.app/" class="project-btn">View Project</a>
+                    </div>
+                </div>
+    
+                <div class="project-card">
+                    <img src="img/task.jpg" alt="Project 4" class="project-img">
+                    <div class="project-info">
+                        <h3>Lexify</h3>
+                        <p>Lexify is a simple legal forum where users can ask legal questions and lawyers can respond with relevant answers. .</p>
+                        <a href="https://lexify-scfw.onrender.com/" class="project-btn">View Project</a>
+                    </div>
+                </div>
+    
+                <div class="project-card">
+                    <img src="img/hotel.jpg" alt="Project 5" class="project-img">
+                    <div class="project-info">
+                        <h3>Airbnb Clone</h3>
+                        <p>A booking platform similar to Airbnb &nbsp;.</p>
+                        <a href="https://project-1-bq6f.onrender.com" class="project-btn">View Project</a>
+                    </div>
+                </div>
+    
+                <div class="project-card">
+                    <img src="img/ai.jpg" alt="Project 6" class="project-img">
+                    <div class="project-info">
+                        <h3>ChatGPT Clone</h3>
+                        <p>An AI chatbot similar to ChatGPT.</p>
+                        <a href="https://project-2-mu-lemon.vercel.app/" class="project-btn">View Project</a>
+                    </div>
+                </div>
+                <!-- (Other project‑cards unchanged) -->
+                <!-- … -->
+            </div>
+
+            <button class="slide-btn right-btn">&#10095;</button>
+        </div>
+    </section>
+
+    <!-- ────────────── Contact ────────────── -->
+    <section id="contact" class="contact-section animate">
+        <h2>Contact Me</h2>
+        <p class="contact-p">Feel free to reach out for collaborations or any inquiries!</p>
+
+        <div class="contact-container">
+            <form class="contact-form" onsubmit="redirectToThankYou(event)">
+                <input type="text"  placeholder="Your Name"  required />
+                <input type="email" placeholder="Your Email" required />
+                <textarea           placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+
+            <div class="contact-info">
+                <p class="info-p"><strong>Email:</strong>&nbsp;darkthunder07@gmail.com</p>
+                <p class="info-p"><strong>Phone:</strong>&nbsp;+91 9190053668</p>
+
+                <div class="social-icons">
+                    <a href="https://github.com/Thethunder07" target="_blank"><i class="bx bxl-github"></i></a>
+                    <a href="https://www.linkedin.com/in/aakarsh-kashyap-b743162a6/" target="_blank"><i class="bx bxl-linkedin-square"></i></a>
+                    <a href="mailto:darkthunder007ak@gmail.com" target="_blank"><i class="bx bxl-gmail"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ────────────── Scripts ────────────── -->
+    <script src="script.js"></script>
+</body>
+</html>
