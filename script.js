@@ -136,8 +136,8 @@ const downloadBtn = document.getElementById("downloadCV");
 if (downloadBtn) {
   downloadBtn.addEventListener("click", () => {
     const link = document.createElement("a");
-    link.href = "img/cv.pdf";
-    link.download = "My_CV.pdf";
+    link.href = "img/AAKARSH-KASHYAP RESUME.pdf";
+    link.download = "My_RESUME.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
