@@ -15,24 +15,26 @@ jobs:
     - name: List project files
       run: ls -la
 
-    - name: Run HTMLHint
-      uses: Cycjimmy/htmlhint-action@v1
-      with:
-       config-file: .htmlhintrc
+    # ✅ HTMLHint via npm
+    - name: Install HTMLHint
+      run: npm install -g htmlhint
 
+    - name: Run HTMLHint
+      run: htmlhint . --config .htmlhintrc
+
+    # ✅ ESLint
     - name: Install ESLint
       run: npm install eslint --save-dev
-       
+
     - name: Run ESLint
       run: npx eslint .
 
+    # ✅ Stylelint
     - name: Install Stylelint
       run: npm install stylelint stylelint-config-standard --save-dev
 
     - name: Run Stylelint
       run: npx stylelint "**/*.css"
-
-
 
     - name: Echo success message
       run: echo "✅ GitHub Actions is working perfectly!"
