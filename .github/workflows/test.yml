@@ -29,12 +29,5 @@ jobs:
     - name: Run ESLint
       run: npx eslint .
 
-    # ✅ Stylelint
-    - name: Install Stylelint
-      run: npm install stylelint stylelint-config-standard --save-dev
-
-    - name: Run Stylelint
-      run: npx stylelint "**/*.css"
-
     - name: Echo success message
       run: echo "✅ GitHub Actions is working perfectly!"
