@@ -1,0 +1,19 @@
+name: Portfolio Test CI
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  test-run:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: List project files
+      run: ls -la
+
+    - name: Echo success message
+      run: echo "✅ GitHub Actions is working perfectly!"
